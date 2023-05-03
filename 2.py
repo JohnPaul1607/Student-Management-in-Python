@@ -49,7 +49,9 @@ class School(BaseModel):
         return None
 
 
+
 log ={'users':{"s1": "123","s2":"123"},'staff':{"#10":"123","#11":"123"}}
+
 
 def login():
     username = input("Username: ")
@@ -79,6 +81,7 @@ def login():
         }
         user=Teacher(**external_data)
         print(user.dict())
+   
        
     else:
         print("Invalid username or password")
